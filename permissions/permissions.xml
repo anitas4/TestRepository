@@ -1072,7 +1072,22 @@
         </RunTimePermissions>
         <Entities>
             <Entity
-             name="TestProjectStyle"
+             name="TestCICDStyle"
+             type="StyleDefinition">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="DemoStyleCICD"
              type="StyleDefinition">
                 <VisibilityPermissions>
                     <Visibility></Visibility>
@@ -1274,7 +1289,23 @@
                 </EventSubscribe>
             </Permissions>
         </RunTimePermissions>
-        <Entities></Entities>
+        <Entities>
+            <Entity
+             name="TestCICDMashup"
+             type="Mashup">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+        </Entities>
     </Mashups>
     <Menus>
         <VisibilityPermissions>
@@ -1503,7 +1534,7 @@
         </RunTimePermissions>
         <Entities>
             <Entity
-             name="TestProject"
+             name="TestCICDProject"
              type="Project">
                 <VisibilityPermissions>
                     <Visibility></Visibility>
@@ -2130,7 +2161,23 @@
                 </EventSubscribe>
             </Permissions>
         </RunTimePermissions>
-        <Entities></Entities>
+        <Entities>
+            <Entity
+             name="TestDemoThing"
+             type="Thing">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+        </Entities>
     </Things>
     <NotificationContents>
         <VisibilityPermissions>
