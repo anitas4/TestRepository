@@ -1072,6 +1072,21 @@
         </RunTimePermissions>
         <Entities>
             <Entity
+             name="styleCheckbox"
+             type="StyleDefinition">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
              name="TestCICDStyle"
              type="StyleDefinition">
                 <VisibilityPermissions>
@@ -1459,7 +1474,23 @@
                 </EventSubscribe>
             </Permissions>
         </RunTimePermissions>
-        <Entities></Entities>
+        <Entities>
+            <Entity
+             name="TestCICDMedia"
+             type="MediaEntity">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+        </Entities>
     </MediaEntities>
     <Projects>
         <VisibilityPermissions>
