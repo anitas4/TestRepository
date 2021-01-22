@@ -12,8 +12,8 @@
          description=""
          documentationContent=""
          homeMashup=""
-         lastModifiedDate="2021-01-22T20:45:55.265+08:00"
-         name="DemoStyleCICD"
+         lastModifiedDate="2021-01-22T20:48:29.550+08:00"
+         name="CICDCSSStyle"
          projectName="TestCICDProject"
          tags="">
             <avatar></avatar>
@@ -43,7 +43,7 @@
               "lineColor" : "rgba(0,0,0,1)",
               "lineStyle" : "solid",
               "lineThickness" : 1,
-              "secondaryBackgroundColor" : "",
+              "secondaryBackgroundColor" : "rgba(213,124,186,1)",
               "textSize" : "normal"
             }
             ]]>
