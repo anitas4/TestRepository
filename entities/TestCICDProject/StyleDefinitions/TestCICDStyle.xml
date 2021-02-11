@@ -12,9 +12,9 @@
          description=""
          documentationContent=""
          homeMashup=""
-         lastModifiedDate="2021-01-13T21:02:53.016+08:00"
-         name="TestProjectStyle"
-         projectName="TestProject"
+         lastModifiedDate="2021-02-08T18:04:50.165+08:00"
+         name="TestCICDStyle"
+         projectName="TestCICDProject"
          tags="">
             <avatar></avatar>
             <DesignTimePermissions>
@@ -33,7 +33,7 @@
             <content>
             <![CDATA[
             {
-              "backgroundColor" : "",
+              "backgroundColor" : "rgba(203,93,142,1)",
               "displayString" : "",
               "fontEmphasisBold" : false,
               "fontEmphasisItalic" : false,
