@@ -13,10 +13,10 @@
          documentationContent=""
          homeMashup=""
          isDynamic="false"
-         lastModifiedDate="2021-02-12T00:59:24.460+08:00"
+         lastModifiedDate="2021-02-12T01:01:09.090+08:00"
          name="TagCICD"
          projectName="TestCICDProject"
-         tags="">
+         tags="TagCICD:IOT">
             <avatar></avatar>
             <DesignTimePermissions>
                 <Create></Create>
