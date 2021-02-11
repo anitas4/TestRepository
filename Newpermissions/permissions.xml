@@ -1120,6 +1120,21 @@
                 <RunTimePermissions></RunTimePermissions>
             </Entity>
             <Entity
+             name="IOT_Style"
+             type="StyleDefinition">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
              name="TestCICDStyle"
              type="StyleDefinition">
                 <VisibilityPermissions>
