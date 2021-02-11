@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b90" majorVersion="8" minorVersion="5" modelPersistenceProviderPackage="PostgresPersistenceProviderPackage" revision="2" schemaVersion="1052" universal=""><StyleDefinitions/><Networks/><PersistenceProviderPackages/><Mashups><Mashup aspect.isFlex="true" aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="" homeMashup="" lastModifiedDate="2021-02-12T01:00:47.708+08:00" name="MAshup_TagCICD" projectName="TestCICDProject" rows="0.0" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ParameterDefinitions/><Things/><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b90" majorVersion="8" minorVersion="5" modelPersistenceProviderPackage="PostgresPersistenceProviderPackage" revision="2" schemaVersion="1052" universal=""><StyleDefinitions><StyleDefinition description="" documentationContent="" homeMashup="" lastModifiedDate="2021-02-12T01:07:27.547+08:00" name="Style_TagCICD" projectName="" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><content><![CDATA[{
+  "backgroundColor" : "",
+  "displayString" : "",
+  "fontEmphasisBold" : false,
+  "fontEmphasisItalic" : false,
+  "fontEmphasisUnderline" : false,
+  "foregroundColor" : "",
+  "image" : "",
+  "lineColor" : "",
+  "lineStyle" : "solid",
+  "lineThickness" : 1,
+  "secondaryBackgroundColor" : "",
+  "textSize" : "normal"
+}]]></content><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, tags : updated&#10;" timestamp="2021-02-12T01:07:27.547+08:00" user="Administrator"/></ConfigurationChanges></StyleDefinition></StyleDefinitions><Networks/><PersistenceProviderPackages/><Mashups><Mashup aspect.isFlex="true" aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="" homeMashup="" lastModifiedDate="2021-02-12T01:00:47.708+08:00" name="MAshup_TagCICD" projectName="TestCICDProject" rows="0.0" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ParameterDefinitions/><Things/><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
   "CustomMashupCss" : "",
   "Data" : {
     "Session" : {

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <ExtensionPackages>
+        <ExtensionPackage
+         artifactId=""
+         aspect.isExtension="true"
+         buildNumber=""
+         dependsOn=""
+         description="infotableselector Widget"
+         documentationContent=""
+         groupId=""
+         homeMashup=""
+         lastModifiedDate="2021-01-12T21:52:52.872+08:00"
+         migratorClass=""
+         minimumThingWorxVersion="4.0.0"
+         name="InfoTableSelector_ExtensionPackage"
+         packageVersion="2.0.0"
+         projectName=""
+         tags=""
+         vendor="ThingWorx Customer Service">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+        </ExtensionPackage>
+    </ExtensionPackages>
+</Entities>

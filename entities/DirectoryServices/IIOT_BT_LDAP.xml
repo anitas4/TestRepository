@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <DirectoryServices>
+        <DirectoryService
+         className="com.thingworx.security.directoryservices.LDAPDirectoryService"
+         description="IIOT LDAP Configuration"
+         documentationContent="&lt;p&gt;&amp;nbsp;Use this Example, Duplicate it and update the Configuration to tie into your Active Directory System.&lt;/p&gt;&lt;p&gt;In LDAP terms, you can define as many DC and CN as you need.&lt;br&gt;&lt;/p&gt;"
+         enabled="true"
+         homeMashup=""
+         lastModifiedDate="2021-01-11T22:37:20.037+08:00"
+         name="IIOT_BT_LDAP"
+         priority="1"
+         projectName=""
+         tags="IOT:LDAP">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables>
+                <ConfigurationTable
+                 description="LDAP Settings"
+                 isMultiRow="false"
+                 name="LDAPProxyConfiguration"
+                 ordinal="0">
+                    <DataShape>
+                        <FieldDefinitions>
+                            <FieldDefinition
+                             aspect.defaultValue="uid=admin,ou=system"
+                             baseType="STRING"
+                             description="LDAP Distinguished Name to use when binding"
+                             name="adminBindDN"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             baseType="PASSWORD"
+                             description="LDAP administrative password"
+                             name="adminPassword"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="10389.0"
+                             baseType="NUMBER"
+                             description="LDAP Server port"
+                             name="port"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="LDAP"
+                             baseType="STRING"
+                             description="LDAP Protocol"
+                             name="protocol"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="localhost"
+                             baseType="STRING"
+                             description="LDAP Server"
+                             name="server"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="ou=people"
+                             baseType="STRING"
+                             description="User Base DN"
+                             name="userBaseDN"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="uid"
+                             baseType="STRING"
+                             description="LDAP user id attribute to match when looking up a user"
+                             name="userIdAttribute"
+                             ordinal="0"></FieldDefinition>
+                        </FieldDefinitions>
+                    </DataShape>
+                    <Rows>
+                        <Row>
+                            <adminBindDN>
+                            <![CDATA[
+                            cn=eamsadmin,ou=People,dc=pxed,dc=pfizer,dc=com
+                            ]]>
+                            </adminBindDN>
+                            <adminPassword></adminPassword>
+                            <port>3890.0</port>
+                            <protocol>
+                            <![CDATA[
+                            LDAP
+                            ]]>
+                            </protocol>
+                            <server>
+                            <![CDATA[
+                            pxedv2edc.pfizer.com
+                            ]]>
+                            </server>
+                            <userBaseDN>
+                            <![CDATA[
+                            dc=pfizer,dc=com
+                            ]]>
+                            </userBaseDN>
+                            <userIdAttribute>
+                            <![CDATA[
+                            cn
+                            ]]>
+                            </userIdAttribute>
+                        </Row>
+                    </Rows>
+                </ConfigurationTable>
+            </ConfigurationTables>
+        </DirectoryService>
+    </DirectoryServices>
+</Entities>

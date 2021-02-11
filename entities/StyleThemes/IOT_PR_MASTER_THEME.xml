@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <StyleThemes>
+        <StyleTheme
+         description=""
+         documentationContent=""
+         homeMashup=""
+         lastModifiedDate="2020-09-10T22:18:13.877+08:00"
+         name="IOT_PR_MASTER_THEME"
+         projectName=""
+         tags="IOT:PR;IOT:PCPM">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <content>
+            <![CDATA[
+            {
+              "CustomCss" : {
+                "value" : ".PieRed:not([no-wc-style])>.widget-content    {\n    color: #cc292b;\n    font-size:14px;\n    font-weight: bold;\n    font-style: normal;\n    text-decoration: none;\n}\n.PiePink:not([no-wc-style])>.widget-content    {\n    color: #d55e5e;\n    font-size:14px;\n    font-weight: bold;\n    font-style: normal;\n    text-decoration: none;\n}\n\n.PieOrange:not([no-wc-style])>.widget-content  {\n    color: #ff9901;\n    font-size:14px;\n    font-weight: bold;\n    font-style: normal;\n    text-decoration: none;\n}\n\n.PieGreen:not([no-wc-style])>.widget-content  {\n    color: #8dc248;\n    font-size:14px;\n    font-weight: bold;\n    font-style: normal;\n    text-decoration: none;\n}\n.PieYellow:not([no-wc-style])>.widget-content  {\n    color: #f5c702;\n    font-size:14px;\n    font-weight: bold;\n    font-style: normal;\n    text-decoration: none;\n}\n.PieBlue:not([no-wc-style])>.widget-content  {\n    color: #0093d0;\n    font-size:14px;\n    font-weight: bold;\n    font-style: normal;\n    text-decoration: none;\n}\n.PiePurple:not([no-wc-style])>.widget-content  {\n    color: #9e65e8;\n    font-size:14px;\n    font-weight: bold;\n    font-style: normal;\n    text-decoration: none;\n}\n\n.BorderRight:not([no-wc-style]) >.widget-content {\n border-right :  1px solid #979797 !important;\n}\n.widget-ptcsvaluedisplay::part(fallback-text){\n    text-align: left;\n    font-size:14px;\n    color:#ffffff;\n    overflow: auto;\n    overflow-x:auto;\n    overflow-y:auto;\n    vertical-align:top;\n    width:100%;\n}ptcs\n\n.VDFooter2 .widget-ptcsvaluedisplay::part(fallback-text){\n    text-align: center;\n    font-size:14px;\n    color:#ffffff;\n    overflow: auto;\n    overflow-x:auto;\n    overflow-y:auto;\n    vertical-align:top;\n    width:1600px;\n}\n.widget-ptcsvaluedisplay{\n    text-align: left;\n    font-size:14px;\n    color:#ffffff;\n    overflow: auto;\n    vertical-align:top;\n}\n.ptcs-dropdown {\n    /*grid-template-columns: auto minmax(0px, 1fr);\n    grid-template-rows: 1fr auto;*/\n    overflow: hidden;\n\tbackground: rgb(37, 62, 83);\n    filter: none;\n    color: rgb(146, 182, 213);\n    font-weight: normal;\n    font-style: normal;\n    text-decoration: none;\n    border-width: 1px;\n    border-color: rgb(88, 113, 132);\n    border-style: solid;\n    cursor: pointer;\n    display: block;\n    height: 100%;\n    padding: 0px 23px 0px 5px;\n    border-radius: 4px;\n    box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n}\n\n.widget-ptcsvaluedisplay:not([no-wc-style]) ::part(fallback-text){\n    text-align: left;\n    font-size:14px;\n    color:#ffffff;\n    overflow: auto;\n    overflow-x:auto;\n    overflow-y:auto;\n    vertical-align:top;\n    width:100%;\n}\n\n.widget-ptcslabel:not([no-wc-style]) ::part(label){\n    vertical-align:top;\n}\n\n.widget-ptcslabel{\n    font-size:14px;\n    color:#ffffff;\n    overflow: auto !important;\n    overflow-y: hidden;\n    vertical-align:top;\n}\n\n.VDHeader .widget-ptcsvaluedisplay::part(fallback-text){\n    padding-left: 3px;\n    background: #1e3344;\n    filter: none;\n    color: #ffffff;\n    font-size: 22px;\n    border: none;\n    overflow: auto;\n    overflow-y: hidden;\n\n}\n\n.VDFooter:not([no-wc-style])>.widget-content {\n    padding-left: 0;\n    background: #203649;\n    filter: none;\n    color: #94b6f5;\n    font-weight: normal;\n    font-style: normal;\n    text-decoration: none;\n    overflow-y: hidden;\n    font-size: 10px;\n    border: none;\n}\n\n.GraphHeader .widget-ptcsvaluedisplay::part(fallback-text){\n    padding-left: 0;\n    background: #213749;\n    filter: none;\n    color: #ffffff;\n    font-weight: normal;\n    font-style: normal;\n    text-decoration: none;\n    font-size: 24px;\n    border: none;\n}\n.title-text {\n\tbackground: #1c2f40;\n    filter: none;\n    color: #ffffff;\n    font-weight: normal;\n\tfont-style: normal;\n\ttext-decoration: none;\n}\n\n.popup-title {\n    padding-left: 0;\n    background: #1c2f40;\n    filter: none;\n    color: #ffffff;\n    font-weight: normal;\n    font-style: normal;\n    text-decoration: none;\n    font-size: 20px;\n    border: none;\n}\n\n.HandCursor{\n\tcursor:pointer;\n}\n\n.widget-bounding-box > .widget-content.ptcs-wrapper {\n    vertical-align: top;\n    \n}\n\n#runtime .mashup-popup.has-title .title-text\n{\n    vertical-align: middle;\n    \n    background: #1c2f40;\n    \n    filter: none;\n    color: #ffffff !important;\n    font-weight: normal;\n    font-style: normal;\n    text-decoration: none;\n    font-size: 16px;\n    \n    border: none;\n}\n\n#runtime > .mashup-popup.has-title .popup-title {\n    font-size: 12px;\n    font-weight: bold;\n    padding-left: 0;\n    height: 40px;\n    left: 0;\n    right: 0;\n    position: absolute;\n    top: -40px;\n    width: 100%;\n    border: none;\n}\n\n.linkButton .widget-ptcslink::part(link) {\n      font: bold 14px Arial;\n      text-decoration: none;\n      background-color: #0094c8;\n      color: #ffffff;\n      padding: 2px 6px 2px 6px;\n      border-top: 1px solid #CCCCCC;\n      border-right: 1px solid #333333;\n      border-bottom: 1px solid #333333;\n      border-left: 1px solid #CCCCCC;\n}\n\n/******************************************GRID STYLE ELEMENTS ************************************************************/\n.widgets-grid-dims {\n  width: 18px;\n  height: 18px;\n}\n\n.widgets-gridadvanced {\n  grid-row-gap: 5px;\n}\n\n.widgets-gridadvanced-dims {\n  width: 16px;\n  height: 16px;\n}\n\n.widget-gridadvanced .dhx_toolbar_material.dhx_toolbar_shadow {\n  box-shadow: none;\n}\n\n.widget-gridadvanced > .gridbox {\n    flex: 2;\n    display: flex;\n    flex-flow: column;\n    height: 100%;\n}\n\ndiv.gridbox {\n    overflow: hidden;\n    text-align: left;\n}\n\ndiv.gridbox_material.gridbox {\n  border: 0px solid #dfdfdf;\n}\n\n.widget-gridadvanced-helper,\n.widget-treegridadvanced-helper {\n  background: url(\"../thingworx/widgets/gridadvanced/images/helper.png\") no-repeat #d5c8f8 center center;\n  height: 200px;\n  width: 444px;\n}\n\n.widget-gridadvanced {\n  border: #EEE 1px solid;\n  overflow: hidden;\n  display: flex;\n  flex-flow: column;\n}\n\n.widget-gridadvanced.column-name {\n  width: 120px;\n}\n\n.widget-gridadvanced > .dhx_toolbar_material {\n  z-index: 1;\n}\n\n.widget-gridadvanced div.gridbox_material.gridbox table.hdr td div.hdrcell {\n  max-height: inherit;\n  overflow-y: inherit;\n  text-overflow: inherit;\n}\n\n.widget-gridadvanced > .gridbox {\n  flex: 2;\n  display: flex;\n  flex-flow: column;\n  /*height: 100% !important;*/\n}\n\n.widget-gridadvanced > .gridbox > .objbox {\n  flex: 2;\n}\n\n.widget-gridadvanced .no-data {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  top: 0;\n  background: #f5f5f5;\n}\n\n.widget-gridadvanced .no-data span {\n  margin: 0;\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  width: 100%;\n  text-align: center;\n}\n\n.widget-gridadvanced .overlay {\n  width: 100%;\n  height: 100%;\n  background: transparent;\n  position: absolute;\n  left: 0;\n  top: 0;\n  z-index: 12;\n}\n\n.widget-gridadvanced .gridadvanced_filter input {\n  width: 120px;\n  padding: 0;\n  -webkit-border-radius: 0;\n  -moz-border-radius: 0;\n  border-radius: 0;\n  -webkit-box-shadow: none;\n  -moz-box-shadow: none;\n  box-shadow: none;\n}\n\n.widget-gridadvanced .gridadvanced_length select {\n  width: 44px;\n  height: 18px;\n  line-height: normal;\n  padding: 0;\n  border-radius: 0;\n}\n\n.nav-header.grid-advanced-nav-header {\n  float: left;\n}\n\n.nav-header .grid-advanced-show-nav-header {\n  float: right;\n}\n\n.nav-header .grid-advanced-suppress-nav-header {\n  margin-left: 40px;\n  display: inline-block;\n}\n\n.widget-gridadvanced div.widget-divider {\n  background: #000;\n  display: block;\n}\n\n.widget-gridadvanced table.gridadvanced tbody tr {\n  padding: 10px 10px 10px 10px;\n  border-top: 2px solid #ffffff;\n}\n\n.widget-gridadvanced table.gridadvanced tfoot td {\n  padding: 10px 18px 6px 18px;\n  border-top: 1px solid #111;\n}\n\n.widget-gridadvanced table.gridadvanced thead .sorting,\n.widget-gridadvanced table.gridadvanced thead .sorting_asc,\n.widget-gridadvanced table.gridadvanced thead .sorting_desc {\n  cursor: pointer;\n  *cursor: hand;\n}\n\n.widget-gridadvanced table.gridadvanced thead .sorting,\n.widget-gridadvanced table.gridadvanced thead .sorting_asc,\n.widget-gridadvanced table.gridadvanced thead .sorting_desc,\n.widget-gridadvanced table.gridadvanced thead .sorting_asc_disabled,\n.widget-gridadvanced table.gridadvanced thead .sorting_desc_disabled {\n  background-repeat: no-repeat;\n  background-position: center right;\n}\n\n.widget-gridadvanced table.gridadvanced thead .sorting {\n  background-image: url(\"/Thingworx/Common/thingworx/widgets/gridadvanced/images/sort_both.png\");\n}\n\n.widget-gridadvanced table.gridadvanced thead .sorting_asc {\n  background-image: url(\"/Thingworx/Common/thingworx/widgets/gridadvanced/images/sort_asc.png\");\n}\n\n.widget-gridadvanced table.gridadvanced thead .sorting_desc {\n  background-image: url(\"/Thingworx/Common/thingworx/widgets/gridadvanced/images/sort_desc.png\");\n}\n\n.widget-gridadvanced table.gridadvanced thead .sorting_asc_disabled {\n  background-image: url(\"/Thingworx/Common/thingworx/widgets/gridadvanced/images/sort_asc_disabled.png\");\n}\n\n.widget-gridadvanced table.gridadvanced thead .sorting_desc_disabled {\n  background-image: url(\"/Thingworx/Common/thingworx/widgets/gridadvanced/images/sort_desc_disabled.png\");\n}\n\n.widget-gridadvanced .objbox table tbody tr [src*=\"item_chk0.gif\"] {\n  background-image: url(\"../thingworx/widgets/gridadvanced/common/images/unchecked.PNG\");\n  width: 15px;\n  height: 15px;\n  box-sizing: border-box;\n  padding-left: 15px;\n  background-size: 15px 15px;\n  background-repeat: no-repeat;\n}\n\n.widget-gridadvanced .objbox table tbody tr [src*=\"item_chk1.gif\"] {\n  background-image: url(\"../thingworx/widgets/gridadvanced/common/images/checked.PNG\");\n  width: 15px;\n  height: 15px;\n  box-sizing: border-box;\n  padding-left: 15px;\n  background-size: 15px 15px;\n  background-repeat: no-repeat;\n}\n\n.widget-gridadvanced .gridadvanced_wrapper .gridadvanced_paginate .paginate_button.current,\n.gridadvanced_wrapper .gridadvanced_paginate .paginate_button.current:hover {\n  color: #333;\n}\n\n.widget-gridadvanced .gridadvanced_wrapper .gridadvanced_info {\n  clear: both;\n  float: left;\n  padding-left: 10px;\n  padding-top: 15px;\n}\n\n.widget-gridadvanced thead th {\n  text-align: left;\n}\n\n#grid-config-list {\n  width: 260px;\n}\n\n#grid-config {\n  width: 890px;\n}\n\n.grid-config-list-header .btn-group {\n  float: right;\n}\n\n.widget-gridadvanced .gridadvanced_length {\n  padding-left: 10px;\n  padding-top: 5px;\n}\n\n.widget-gridadvanced .gridadvanced_info {\n  padding-left: 10px;\n}\n\n.widget-gridadvanced .gridadvanced_paginate {\n  padding-top: 5px;\n  padding-bottom: 5px;\n}\n\n.widget-gridadvanced .gridadvanced_filter {\n  padding: 5px;\n}\n\n.widget-gridadvanced .grid-control-container .dhx_toolbar_material {\n  background: inherit;\n  color: inherit;\n  font-style: inherit;\n  text-decoration: inherit;\n  font-size: inherit;\n}\n\ndiv.gridbox_material.gridbox table.hdr tr {\n  background-color: transparent;\n}\n\n.widget-gridadvanced .xhdr td {\n  height: auto;\n  line-height: normal;\n  background-clip: padding-box;\n}\n\n.widget-gridadvanced .objbox table tbody tr td .treegrid_cell img:nth-last-child(2) {\n  width: 18px;\n  height: 18px;\n  box-sizing: border-box;\n  padding-left: 18px;\n  background-size: 18px 18px;\n  background-repeat: no-repeat;\n  margin-top: 1px;\n}\n\n.widget-gridadvanced .objbox table tbody tr td .treegrid_cell img.grid_collapse_icon {\n  width: 18px;\n  height: 18px;\n  box-sizing: border-box;\n  padding-left: 18px;\n  background-size: 18px 18px;\n  background-repeat: no-repeat;\n}\n\n.widget-gridadvanced .objbox table tbody tr td .treegrid_cell span {\n  vertical-align: middle;\n}\n\n.widget-gridadvanced div.gridbox div.ftr {\n  z-index: 1;\n}\n\n.widget-gridadvanced div.gridbox div.ftr td {\n  border: inherit;\n}\n\n/****************************************END OF GRID DEFINITIONS*********************************************************/\n.htmlText\n{\n    color:#ffffff;\n    font-size:16px;\n}\n\n.RightBorder\n{\n    border-right: 1px solid white;\n}\n\n.BottomBorder\n{\n    border-bottom: 1px solid white;\n}\n\n"
+              },
+              "props" : [ {
+                "name" : "global-color-bg-primary",
+                "value" : "#253E53"
+              }, {
+                "name" : "global-color-text-header",
+                "value" : "#ffffff"
+              }, {
+                "name" : "global-color-text-subheader",
+                "value" : "#ffffff"
+              }, {
+                "name" : "global-color-text-label",
+                "value" : "#ffffff"
+              }, {
+                "name" : "global-color-text-label-disabled",
+                "value" : "#ffffff"
+              }, {
+                "name" : "global-color-text-body",
+                "value" : "#ffffff"
+              }, {
+                "name" : "e-grid-header-divider-color",
+                "value" : ""
+              }, {
+                "name" : "e-grid-cell-bordercolor",
+                "value" : ""
+              }, {
+                "name" : "e-grid-bordercolor",
+                "value" : ""
+              }, {
+                "name" : "e-grid-header-label-fontweight",
+                "value" : "700"
+              }, {
+                "name" : "global-color-bg-selected",
+                "value" : ""
+              }, {
+                "name" : "global-color-bg-hover",
+                "value" : ""
+              }, {
+                "name" : "global-color-bg-disabled",
+                "value" : ""
+              }, {
+                "name" : "global-text-label-fontweight",
+                "value" : "400"
+              }, {
+                "name" : "e-button-transparent-hover-fontweight",
+                "value" : "700"
+              }, {
+                "name" : "e-button-transparent-hover-fontsize",
+                "value" : "16px"
+              }, {
+                "name" : "e-button-transparent-hover-fontstyle",
+                "value" : "normal"
+              }, {
+                "name" : "e-button-transparent-pressed-fontstyle",
+                "value" : "underline"
+              }, {
+                "name" : "e-button-transparent-pressed-fontweight",
+                "value" : "700"
+              }, {
+                "name" : "e-button-transparent-pressed-fontsize",
+                "value" : "16px"
+              }, {
+                "name" : "e-button-transparent-fontsize",
+                "value" : "16px"
+              }, {
+                "name" : "e-button-transparent-fontweight",
+                "value" : "700"
+              }, {
+                "name" : "e-button-primary-pressed-fontstyle",
+                "value" : "underline"
+              }, {
+                "name" : "e-grid-header-backgroundcolor",
+                "value" : "#253E53"
+              }, {
+                "name" : "e-grid-cell-border-placement",
+                "value" : "right"
+              }, {
+                "name" : "e-list-bordercolor",
+                "value" : "#587184"
+              }, {
+                "name" : "e-grid-row-backgroundcolor-selected",
+                "value" : "#253E53"
+              }, {
+                "name" : "e-grid-row-backgroundcolor-hover",
+                "value" : "#253E53"
+              }, {
+                "name" : "e-grid-header-label-fontsize",
+                "value" : "16px"
+              }, {
+                "name" : "e-grid-text-fontsize",
+                "value" : "16px"
+              }, {
+                "name" : "e-grid-header-label-fontstyle",
+                "value" : "underline"
+              }, {
+                "name" : "e-grid-header-divider-thickness",
+                "value" : "0px"
+              }, {
+                "name" : "e-grid-cell-borderthickness",
+                "value" : "0px"
+              }, {
+                "name" : "e-grid-borderthickness",
+                "value" : "0px"
+              }, {
+                "name" : "e-grid-row-backgroundcolor",
+                "value" : "#28465d"
+              }, {
+                "name" : "global-color-bg-secondary",
+                "value" : "#253E53"
+              } ],
+              "version" : "0.1"
+            }
+            ]]>
+            </content>
+            <preview></preview>
+        </StyleTheme>
+    </StyleThemes>
+</Entities>

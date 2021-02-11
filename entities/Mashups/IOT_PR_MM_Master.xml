@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <Mashups>
+        <Mashup
+         aspect.isFlex="true"
+         aspect.isResponsive="true"
+         aspect.mashupType="target"
+         columns="0.0"
+         description="Initial Master mashup for imex application dsahboard to select workstream and contains logo and logout icons only. "
+         documentationContent=""
+         homeMashup=""
+         lastModifiedDate="2020-09-10T22:18:14.000+08:00"
+         name="IOT_PR_MM_Master"
+         projectName=""
+         rows="0.0"
+         tags="IOT:PR">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <ParameterDefinitions></ParameterDefinitions>
+            <Things>
+                <Thing>IOT_IMeX_T_Utility</Thing>
+                <Thing>IOT_PQ_T_Global</Thing>
+            </Things>
+            <ThingShapes></ThingShapes>
+            <ThingTemplates></ThingTemplates>
+            <mashupContent>
+            <![CDATA[
+            {
+              "CustomMashupCss" : "",
+              "Data" : {
+                "Session" : {
+                  "DataName" : "Session",
+                  "EntityName" : "",
+                  "EntityType" : "Session",
+                  "Id" : "session",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "SessionInterface",
+                    "Name" : "GetGlobalSessionValues",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetGlobalSessionValues"
+                  } ]
+                },
+                "Things_IOT_IMeX_T_Utility" : {
+                  "DataName" : "Things_IOT_IMeX_T_Utility",
+                  "EntityName" : "IOT_IMeX_T_Utility",
+                  "EntityType" : "Things",
+                  "Id" : "a7649242-37d8-4fd5-a7c0-beacb7e4ab96",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "a118a567-5c26-48e5-8a8f-c166476f6a35",
+                    "Name" : "resetString",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "resetString"
+                  } ]
+                },
+                "Things_IOT_PQ_T_Global" : {
+                  "DataName" : "Things_IOT_PQ_T_Global",
+                  "EntityName" : "IOT_PQ_T_Global",
+                  "EntityType" : "Things",
+                  "Id" : "8784aa0b-1ca3-4f19-94bb-e29dba6464be",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "82f422ba-a6a4-4eae-ad72-da33bed853f1",
+                    "Name" : "setHomeMashup",
+                    "Parameters" : {
+                      "strName" : "IOT_PQ_MU_HomeMashup"
+                    },
+                    "RefreshInterval" : 0,
+                    "Target" : "setHomeMashup"
+                  }, {
+                    "APIMethod" : "get",
+                    "Characteristic" : "Services",
+                    "Id" : "0348892a-0ff8-4c60-b2d0-96306f6490c6",
+                    "Name" : "GetProperties",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetProperties"
+                  }, {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "789ef748-cd48-4f12-bced-157dc4574e03",
+                    "Name" : "getBrowserDateTime",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "getBrowserDateTime"
+                  }, {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "2ce8033c-141f-42b1-b12e-e88a34f1240d",
+                    "Name" : "SetHomeMashup",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "SetHomeMashup"
+                  } ]
+                },
+                "UserExtensions" : {
+                  "DataName" : "UserExtensions",
+                  "EntityName" : "",
+                  "EntityType" : "UserExtensions",
+                  "Id" : "UserExtensions",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "UserExtensionInterface",
+                    "Name" : "GetCurrentUserExtensionProperties",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetCurrentUserExtensionProperties"
+                  } ]
+                }
+              },
+              "DataBindings" : [ {
+                "Id" : "3c4ecef4-3074-4440-bf02-7758002322d4",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "result",
+                  "SourcePropertyBaseType" : "STRING",
+                  "TargetProperty" : "PQ_SelPlantName",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "Field"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "resetString",
+                "SourceSection" : "Things_IOT_IMeX_T_Utility",
+                "TargetArea" : "Session",
+                "TargetId" : "Session",
+                "TargetSection" : "Session"
+              }, {
+                "Id" : "e6c38c04-7a86-4fc6-a2a4-55950215778c",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "result",
+                  "SourcePropertyBaseType" : "STRING",
+                  "TargetProperty" : "PQ_SelPlantAddress",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "Field"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "resetString",
+                "SourceSection" : "Things_IOT_IMeX_T_Utility",
+                "TargetArea" : "Session",
+                "TargetId" : "Session",
+                "TargetSection" : "Session"
+              }, {
+                "Id" : "abc57c45-59eb-4552-bf8d-52aceacdbb77",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "result",
+                  "SourcePropertyBaseType" : "STRING",
+                  "TargetProperty" : "PQ_LoggedInUser",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "Field"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "resetString",
+                "SourceSection" : "Things_IOT_IMeX_T_Utility",
+                "TargetArea" : "Session",
+                "TargetId" : "Session",
+                "TargetSection" : "Session"
+              }, {
+                "Id" : "678129c7-0659-4343-bcdc-d7716b5daaf5",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "PQ_SelPlantName",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Field",
+                  "TargetProperty" : "LabelText",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Session",
+                "SourceDetails" : "AllData",
+                "SourceId" : "Session",
+                "SourceSection" : "Session",
+                "TargetArea" : "UI",
+                "TargetId" : "label-97",
+                "TargetSection" : ""
+              }, {
+                "Id" : "81cf8a41-53b2-4a98-9edb-fbc4c45c36ba",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "AI_UserFullName",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Field",
+                  "TargetProperty" : "param",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Session",
+                "SourceDetails" : "AllData",
+                "SourceId" : "Session",
+                "SourceSection" : "Session",
+                "TargetArea" : "UI",
+                "TargetId" : "expression-109",
+                "TargetSection" : ""
+              }, {
+                "Id" : "353b931c-b324-4ff3-bca4-a8c5c13b8bd6",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "Output",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "LabelText",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceId" : "expression-109",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "label-74",
+                "TargetSection" : ""
+              }, {
+                "Id" : "26f57637-b35a-4d01-aef9-3f3a473aeab7",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "usecaseName",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "LabelText",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetProperties",
+                "SourceSection" : "Things_IOT_PQ_T_Global",
+                "TargetArea" : "UI",
+                "TargetId" : "label-96",
+                "TargetSection" : ""
+              }, {
+                "Id" : "95ee94ba-1267-41e1-a957-f68a28d0c8a1",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "result",
+                  "SourcePropertyBaseType" : "STRING",
+                  "TargetProperty" : "PQ_HomeMashup",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "Field"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "setHomeMashup",
+                "SourceSection" : "Things_IOT_PQ_T_Global",
+                "TargetArea" : "Session",
+                "TargetId" : "Session",
+                "TargetSection" : "Session"
+              }, {
+                "Id" : "de85c01d-42c9-4a87-b2c5-b82567a1404a",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "Time",
+                  "SourcePropertyBaseType" : "HTML",
+                  "SourcePropertyType" : "Field",
+                  "TargetProperty" : "Text",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "getBrowserDateTime",
+                "SourceSection" : "Things_IOT_PQ_T_Global",
+                "TargetArea" : "UI",
+                "TargetId" : "htmltextarea-78",
+                "TargetSection" : ""
+              } ],
+              "DesignTimePermissions" : {
+                "Create" : [ ],
+                "Delete" : [ ],
+                "Metadata" : [ ],
+                "Read" : [ ],
+                "Update" : [ ]
+              },
+              "Events" : [ {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_IOT_IMeX_T_Utility",
+                "EventHandlerService" : "resetString",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "Clicked",
+                "EventTriggerId" : "button-84",
+                "EventTriggerSection" : "",
+                "Id" : "b8b81a21-931b-411e-90d7-aee9218d89b6"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_IOT_IMeX_T_Utility",
+                "EventHandlerService" : "resetString",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "Clicked",
+                "EventTriggerId" : "button-85",
+                "EventTriggerSection" : "",
+                "Id" : "8189c029-b783-4e79-84e9-f85f860bdff3"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_IOT_PQ_T_Global",
+                "EventHandlerService" : "GetProperties",
+                "EventTriggerArea" : "Mashup",
+                "EventTriggerEvent" : "Loaded",
+                "EventTriggerId" : "mashup-root",
+                "EventTriggerSection" : "",
+                "Id" : "5b268cee-3242-43ff-a838-a8108cb697ed"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_IOT_PQ_T_Global",
+                "EventHandlerService" : "setHomeMashup",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "Clicked",
+                "EventTriggerId" : "button-84",
+                "EventTriggerSection" : "",
+                "Id" : "0d22a1bf-197b-4890-b71e-34bc0ea1b4d6"
+              }, {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "navigationfunction-111",
+                "EventHandlerService" : "Navigate",
+                "EventTriggerArea" : "Data",
+                "EventTriggerEvent" : "ServiceInvokeCompleted",
+                "EventTriggerId" : "setHomeMashup",
+                "EventTriggerSection" : "Things_IOT_PQ_T_Global",
+                "Id" : "089637d2-81fd-4833-9b41-52c790c055ed"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_IOT_PQ_T_Global",
+                "EventHandlerService" : "getBrowserDateTime",
+                "EventTriggerArea" : "Mashup",
+                "EventTriggerEvent" : "Loaded",
+                "EventTriggerId" : "mashup-root",
+                "EventTriggerSection" : "",
+                "Id" : "afdc2356-e08f-46d8-8d3f-2bb8b5d883e1"
+              } ],
+              "RunTimePermissions" : {
+                "permissions" : [ ]
+              },
+              "UI" : {
+                "Properties" : {
+                  "Area" : "Mashup",
+                  "BGImageRepeat" : "no-repeat",
+                  "BGImageSize" : "cover",
+                  "DisplayName" : "Mashup",
+                  "DropShadow" : false,
+                  "Font" : "Arial, Helvetica",
+                  "Height" : 768,
+                  "Id" : "mashup-root",
+                  "Left" : 0,
+                  "MaxWidth" : 0,
+                  "MigratedOn" : "2020-05-28T20:32:15.000Z",
+                  "MigratedToFlex" : true,
+                  "MinHeight" : 0,
+                  "MinWidth" : 0,
+                  "ResponsiveLayout" : true,
+                  "ShowDataLoading" : true,
+                  "Style" : {
+                    "backgroundColor" : "",
+                    "displayString" : "",
+                    "fontEmphasisBold" : false,
+                    "fontEmphasisItalic" : false,
+                    "fontEmphasisUnderline" : false,
+                    "foregroundColor" : "",
+                    "image" : "IOT_IMeX_MED_BackgroundImage",
+                    "lineColor" : "",
+                    "lineStyle" : "solid",
+                    "lineThickness" : 1,
+                    "secondaryBackgroundColor" : "",
+                    "textSize" : "normal"
+                  },
+                  "StyleProperties" : {
+                    "data" : {
+                      "button-84" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "inherit",
+                              "border-color" : "inherit"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-button"
+                      },
+                      "button-85" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "background" : "inherit",
+                              "border-color" : "inherit"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-button"
+                      }
+                    },
+                    "meta" : {
+                      "type" : "WidgetStyler",
+                      "version" : "1.0"
+                    }
+                  },
+                  "StyleTheme" : "IOT_PR_MASTER_THEME",
+                  "Title" : "",
+                  "Top" : 0,
+                  "Type" : "targetmashup",
+                  "Visible" : true,
+                  "Width" : 1024,
+                  "WindowStyle" : {
+                    "backgroundColor" : "",
+                    "displayString" : "",
+                    "fontEmphasisBold" : false,
+                    "fontEmphasisItalic" : false,
+                    "fontEmphasisUnderline" : false,
+                    "foregroundColor" : "",
+                    "image" : "",
+                    "lineColor" : "",
+                    "lineStyle" : "solid",
+                    "lineThickness" : 1,
+                    "secondaryBackgroundColor" : "",
+                    "textSize" : "normal"
+                  },
+                  "Z-index" : 10,
+                  "__TypeDisplayName" : "Master Mashup",
+                  "id_index" : 113,
+                  "supportsAutoResize" : true
+                },
+                "Widgets" : [ {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "DisplayName" : "Master Layout",
+                    "EnableExpandCollapse" : false,
+                    "Expanded" : true,
+                    "Id" : "flexcontainer-1",
+                    "LastContainer" : true,
+                    "ResponsiveLayout" : true,
+                    "ShowDataLoading" : true,
+                    "ShowExpandCollapseTab" : false,
+                    "SourceURL" : "",
+                    "Style" : "DefaultContainerStyle",
+                    "StyleProperties" : { },
+                    "Type" : "flexcontainer",
+                    "UseTheme" : true,
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "Flex Container",
+                    "align-content" : "flex-start",
+                    "align-items" : "flex-start",
+                    "flex-basis" : "auto",
+                    "flex-direction" : "column",
+                    "flex-grow" : "1",
+                    "flex-max-height" : "",
+                    "flex-max-width" : "",
+                    "flex-min-height" : "",
+                    "flex-min-width" : "",
+                    "flex-shrink" : "0",
+                    "flex-size" : "default",
+                    "flex-wrap" : "nowrap",
+                    "iconClass" : "widgets-flexcontainer",
+                    "justify-content" : "flex-start",
+                    "positioning" : "responsive",
+                    "userCannotRemove" : false
+                  },
+                  "Widgets" : [ {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "container-2",
+                      "EnableExpandCollapse" : false,
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-2",
+                      "LastContainer" : false,
+                      "ResponsiveLayout" : false,
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : true,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Flex Container",
+                      "align-content" : "flex-start",
+                      "align-items" : "flex-start",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "column",
+                      "flex-grow" : 1,
+                      "flex-max-height" : "85px",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "85px",
+                      "flex-min-width" : "",
+                      "flex-shrink" : "0",
+                      "flex-size" : "default",
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer-fixed",
+                      "isLocked" : false,
+                      "justify-content" : "flex-start",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "container-79",
+                        "EnableExpandCollapse" : false,
+                        "Expanded" : true,
+                        "Id" : "flexcontainer-79",
+                        "LastContainer" : true,
+                        "ResponsiveLayout" : true,
+                        "ShowDataLoading" : true,
+                        "ShowExpandCollapseTab" : false,
+                        "SourceURL" : "",
+                        "Style" : "DefaultContainerStyle",
+                        "StyleProperties" : { },
+                        "Type" : "flexcontainer",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Flex Container",
+                        "align-content" : "flex-start",
+                        "align-items" : "flex-start",
+                        "flex-basis" : "auto",
+                        "flex-direction" : "row",
+                        "flex-grow" : 1,
+                        "flex-max-height" : "",
+                        "flex-max-width" : "",
+                        "flex-min-height" : "",
+                        "flex-min-width" : "",
+                        "flex-shrink" : "0",
+                        "flex-size" : "default",
+                        "flex-wrap" : "nowrap",
+                        "iconClass" : "widgets-flexcontainer",
+                        "isLocked" : true,
+                        "justify-content" : "flex-start",
+                        "positioning" : "responsive",
+                        "userCannotRemove" : false
+                      },
+                      "Widgets" : [ {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisplayName" : "container-80",
+                          "EnableExpandCollapse" : false,
+                          "Expanded" : true,
+                          "Id" : "flexcontainer-80",
+                          "LastContainer" : false,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "ShowExpandCollapseTab" : false,
+                          "SourceURL" : "",
+                          "Style" : "DefaultContainerStyle",
+                          "StyleProperties" : { },
+                          "Type" : "flexcontainer",
+                          "UseTheme" : true,
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Flex Container",
+                          "align-content" : "flex-start",
+                          "align-items" : "flex-start",
+                          "flex-basis" : "auto",
+                          "flex-direction" : "row",
+                          "flex-grow" : 1,
+                          "flex-max-height" : "",
+                          "flex-max-width" : "",
+                          "flex-min-height" : "",
+                          "flex-min-width" : "",
+                          "flex-shrink" : "0",
+                          "flex-size" : "default",
+                          "flex-wrap" : "nowrap",
+                          "iconClass" : "widgets-flexcontainer",
+                          "isLocked" : false,
+                          "justify-content" : "flex-start",
+                          "positioning" : "responsive",
+                          "userCannotRemove" : false
+                        },
+                        "Widgets" : [ {
+                          "Properties" : {
+                            "Area" : "UI",
+                            "DisplayName" : "panel-94",
+                            "Height" : 200,
+                            "HideScrollbars" : false,
+                            "HorizontalAnchor" : "left",
+                            "Id" : "panel-94",
+                            "LastContainer" : false,
+                            "Left" : 10,
+                            "ResponsiveLayout" : true,
+                            "ShowDataLoading" : true,
+                            "Style" : "IOT_IMex_STYD_Empty",
+                            "Top" : 35,
+                            "Type" : "panel",
+                            "VerticalAnchor" : "top",
+                            "Visible" : true,
+                            "Width" : 300,
+                            "Z-index" : 10,
+                            "__TypeDisplayName" : "Panel"
+                          },
+                          "Widgets" : [ {
+                            "Properties" : {
+                              "AlternateText" : "",
+                              "Area" : "UI",
+                              "ContainerDim" : false,
+                              "Description" : "",
+                              "DisplayName" : "image-95",
+                              "Height" : 54,
+                              "Id" : "image-95",
+                              "LastContainer" : false,
+                              "Left" : 10,
+                              "Position" : "top",
+                              "PreventCaching" : false,
+                              "ResponsiveLayout" : false,
+                              "Scaling" : "fit-x",
+                              "ShowDataLoading" : true,
+                              "SourceURL" : "/Thingworx/MediaEntities/IOT_AI_MED_LogoIIOT",
+                              "Top" : 15,
+                              "Type" : "ptcsimage",
+                              "UseTheme" : true,
+                              "Visible" : true,
+                              "Width" : 146,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Image"
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "CustomClass" : "",
+                              "Description" : "",
+                              "DisclosureControl" : "show-more",
+                              "DisplayName" : "label-96",
+                              "Height" : 22,
+                              "HorizontalAlignment" : "left",
+                              "Id" : "label-96",
+                              "LabelText" : "",
+                              "LabelType" : "label",
+                              "LastContainer" : false,
+                              "Left" : 170,
+                              "MultiLine" : false,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "Top" : 30,
+                              "Type" : "ptcslabel",
+                              "UseTheme" : true,
+                              "VerticalAlignment" : "flex-start",
+                              "Visible" : true,
+                              "Width" : 200,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Label",
+                              "overflowShowLessTxt" : "[[showLess]]",
+                              "overflowShowMoreTxt" : "[[showMore]]"
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "Description" : "",
+                              "DisclosureControl" : "show-more",
+                              "DisplayName" : "label-97",
+                              "Height" : 22,
+                              "HorizontalAlignment" : "left",
+                              "Id" : "label-97",
+                              "LabelText" : "",
+                              "LabelType" : "label",
+                              "LastContainer" : false,
+                              "Left" : 170,
+                              "MultiLine" : false,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "Top" : 45,
+                              "Type" : "ptcslabel",
+                              "UseTheme" : true,
+                              "VerticalAlignment" : "flex-start",
+                              "Visible" : true,
+                              "Width" : 170,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Label",
+                              "overflowShowLessTxt" : "[[showLess]]",
+                              "overflowShowMoreTxt" : "[[showMore]]"
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "AutoEvaluate" : false,
+                              "DisplayName" : "validator-106",
+                              "Expression" : "username == \"\"",
+                              "Height" : 13,
+                              "Id" : "validator-106",
+                              "LastContainer" : false,
+                              "Left" : 285,
+                              "Output" : false,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "Top" : 0,
+                              "Type" : "validator",
+                              "Visible" : true,
+                              "Width" : 110,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Validator",
+                              "_currentParameterDefs" : [ {
+                                "BaseType" : "STRING",
+                                "Description" : "",
+                                "ParameterName" : "username",
+                                "bindingDirection" : "",
+                                "bindingStatus" : false,
+                                "isBindingSource" : false,
+                                "isBindingTarget" : true,
+                                "name" : "username"
+                              } ]
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "AutoEvaluate" : true,
+                              "DataChangeType" : "ALWAYS",
+                              "DisplayName" : "expression-109",
+                              "Expression" : "\"Welcome \"",
+                              "FireOnFirstValue" : false,
+                              "Height" : 28,
+                              "Id" : "expression-109",
+                              "LastContainer" : false,
+                              "Left" : 380.0000305175781,
+                              "OutputBaseType" : "STRING",
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "Top" : 30,
+                              "Type" : "expression",
+                              "Visible" : true,
+                              "Width" : 200,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Expression",
+                              "_currentParameterDefs" : [ {
+                                "BaseType" : "STRING",
+                                "Description" : "",
+                                "ParameterName" : "param",
+                                "bindingDirection" : "",
+                                "bindingStatus" : true,
+                                "isBindingSource" : false,
+                                "isBindingTarget" : true,
+                                "name" : "param"
+                              } ]
+                            },
+                            "Widgets" : [ ]
+                          } ]
+                        } ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisplayName" : "container-103",
+                          "EnableExpandCollapse" : false,
+                          "Expanded" : true,
+                          "Id" : "flexcontainer-103",
+                          "LastContainer" : false,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "ShowExpandCollapseTab" : false,
+                          "SourceURL" : "",
+                          "Style" : "DefaultContainerStyle",
+                          "StyleProperties" : { },
+                          "Type" : "flexcontainer",
+                          "UseTheme" : true,
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Flex Container",
+                          "align-content" : "flex-start",
+                          "align-items" : "flex-start",
+                          "flex-basis" : "auto",
+                          "flex-direction" : "row",
+                          "flex-grow" : 1,
+                          "flex-max-height" : "",
+                          "flex-max-width" : "",
+                          "flex-min-height" : "",
+                          "flex-min-width" : "",
+                          "flex-shrink" : "0",
+                          "flex-size" : "default",
+                          "flex-wrap" : "nowrap",
+                          "iconClass" : "widgets-flexcontainer",
+                          "isLocked" : false,
+                          "justify-content" : "flex-start",
+                          "positioning" : "responsive",
+                          "userCannotRemove" : false
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisplayName" : "container-82",
+                          "EnableExpandCollapse" : false,
+                          "Expanded" : true,
+                          "Id" : "flexcontainer-82",
+                          "LastContainer" : false,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "ShowExpandCollapseTab" : false,
+                          "SourceURL" : "",
+                          "Style" : "DefaultContainerStyle",
+                          "StyleProperties" : { },
+                          "Type" : "flexcontainer",
+                          "UseTheme" : true,
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Flex Container",
+                          "align-content" : "flex-start",
+                          "align-items" : "flex-start",
+                          "flex-basis" : "auto",
+                          "flex-direction" : "row",
+                          "flex-grow" : "1",
+                          "flex-max-height" : "",
+                          "flex-max-width" : "",
+                          "flex-min-height" : "",
+                          "flex-min-width" : "",
+                          "flex-shrink" : "0",
+                          "flex-size" : "default",
+                          "flex-wrap" : "nowrap",
+                          "iconClass" : "widgets-flexcontainer",
+                          "isLocked" : false,
+                          "justify-content" : "flex-start",
+                          "positioning" : "responsive",
+                          "userCannotRemove" : false
+                        },
+                        "Widgets" : [ {
+                          "Properties" : {
+                            "Area" : "UI",
+                            "DisplayName" : "panel-83",
+                            "Height" : 200,
+                            "HideScrollbars" : true,
+                            "HorizontalAnchor" : "left",
+                            "Id" : "panel-83",
+                            "LastContainer" : false,
+                            "Left" : 70,
+                            "ResponsiveLayout" : true,
+                            "ShowDataLoading" : true,
+                            "Style" : "IOT_IMex_STYD_Empty",
+                            "Top" : 35,
+                            "Type" : "panel",
+                            "VerticalAnchor" : "top",
+                            "Visible" : true,
+                            "Width" : 300,
+                            "Z-index" : 10,
+                            "__TypeDisplayName" : "Panel"
+                          },
+                          "Widgets" : [ {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "Description" : "",
+                              "DisclosureControl" : "show-more",
+                              "DisplayName" : "label-74",
+                              "Height" : 17,
+                              "HorizontalAlignment" : "right",
+                              "Id" : "label-74",
+                              "LabelText" : "",
+                              "LabelType" : "label",
+                              "LastContainer" : false,
+                              "Left" : 15,
+                              "MultiLine" : false,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "Top" : 15,
+                              "Type" : "ptcslabel",
+                              "UseTheme" : true,
+                              "VerticalAlignment" : "flex-start",
+                              "Visible" : true,
+                              "Width" : 235,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Label",
+                              "overflowShowLessTxt" : "[[showLess]]",
+                              "overflowShowMoreTxt" : "[[showMore]]"
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "Description" : "",
+                              "DisplayName" : "htmltextarea-78",
+                              "EscapeHTMLText" : false,
+                              "Height" : 35,
+                              "Id" : "htmltextarea-78",
+                              "Label" : "",
+                              "LabelAlignment" : "right",
+                              "LabelStyle" : "IOT_IMeX_STYD_WelcomeLabel",
+                              "LastContainer" : false,
+                              "Left" : 47.9722900390625,
+                              "ReadOnly" : true,
+                              "ResponsiveLayout" : false,
+                              "ShowBorder" : false,
+                              "ShowDataLoading" : true,
+                              "ShowToolbar" : true,
+                              "Text" : "",
+                              "ToolTipField" : "",
+                              "ToolTipStyle" : "IOT_IMEX_STYD_Tooltip",
+                              "Top" : 1,
+                              "Type" : "htmltextarea",
+                              "Visible" : false,
+                              "Width" : 198,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Html TextArea",
+                              "__supportsLabel" : true,
+                              "__supportsTooltip" : true
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "ButtonType" : "primary",
+                              "ContextID" : "",
+                              "Description" : "",
+                              "Disabled" : false,
+                              "DisplayName" : "map",
+                              "Height" : 30,
+                              "Icon" : "/Thingworx/MediaEntities/IOT_IMeX_MED_MapPin",
+                              "Id" : "button-84",
+                              "Label" : "",
+                              "LabelAlignment" : "left",
+                              "LastContainer" : false,
+                              "Left" : 71.99663925170898,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "TabSequence" : 0,
+                              "ToolTipField" : "Location",
+                              "ToolTipStyle" : "DefaultTooltipStyle",
+                              "Top" : 28.993057250976562,
+                              "Type" : "ptcsbutton",
+                              "UseTheme" : true,
+                              "Visible" : false,
+                              "Width" : 30,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Button",
+                              "__supportsTooltip" : true
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "ButtonType" : "transparent",
+                              "ContextID" : "",
+                              "Description" : "",
+                              "Disabled" : false,
+                              "DisplayName" : "home",
+                              "Height" : 30,
+                              "Icon" : "/Thingworx/MediaEntities/IOT_IMeX_MED_HomeIcon",
+                              "Id" : "button-85",
+                              "Label" : "",
+                              "LabelAlignment" : "center",
+                              "LastContainer" : false,
+                              "Left" : 300.99609375,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "TabSequence" : 0,
+                              "ToolTipField" : "Home",
+                              "ToolTipStyle" : "DefaultTooltipStyle",
+                              "Top" : 10,
+                              "Type" : "ptcsbutton",
+                              "UseTheme" : true,
+                              "Visible" : true,
+                              "Width" : 30,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Button",
+                              "__supportsTooltip" : true
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Alignment" : "left",
+                              "Area" : "UI",
+                              "Description" : "",
+                              "Disabled" : false,
+                              "DisplayName" : "link-90",
+                              "Height" : 30,
+                              "Href" : "",
+                              "Id" : "link-90",
+                              "LastContainer" : false,
+                              "Left" : 255,
+                              "LinkType" : "primary",
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "SingleLine" : false,
+                              "TabSequence" : 0,
+                              "TargetWindow" : "_self",
+                              "Text" : "",
+                              "Top" : 10,
+                              "Type" : "ptcslink",
+                              "UseTheme" : true,
+                              "Visible" : true,
+                              "Width" : 30,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Link"
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Alignment" : "left",
+                              "Area" : "UI",
+                              "Description" : "",
+                              "Disabled" : false,
+                              "DisplayName" : "link-91",
+                              "Height" : 30,
+                              "Href" : "",
+                              "Id" : "link-91",
+                              "LastContainer" : false,
+                              "Left" : 350,
+                              "LinkType" : "primary",
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "SingleLine" : false,
+                              "TabSequence" : 0,
+                              "TargetWindow" : "_self",
+                              "Text" : "",
+                              "Top" : 10,
+                              "Type" : "ptcslink",
+                              "UseTheme" : true,
+                              "Visible" : true,
+                              "Width" : 30,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Link"
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "ButtonType" : "primary",
+                              "ContextID" : "",
+                              "Disabled" : false,
+                              "DisplayName" : "button-92",
+                              "Height" : 30,
+                              "Id" : "button-92",
+                              "Label" : "",
+                              "LabelAlignment" : "center",
+                              "LastContainer" : false,
+                              "Left" : 245,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "TabSequence" : 0,
+                              "ToolTipField" : "Global Settings",
+                              "ToolTipStyle" : "DefaultTooltipStyle",
+                              "Top" : 10,
+                              "Type" : "ptcsbutton",
+                              "UseTheme" : true,
+                              "Visible" : true,
+                              "Width" : 50,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Button",
+                              "__supportsTooltip" : true
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "ButtonType" : "primary",
+                              "ContextID" : "",
+                              "Disabled" : true,
+                              "DisplayName" : "button-93",
+                              "Height" : 30,
+                              "Id" : "button-93",
+                              "Label" : "",
+                              "LabelAlignment" : "center",
+                              "LastContainer" : false,
+                              "Left" : 340,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "TabSequence" : 0,
+                              "ToolTipField" : "Help",
+                              "ToolTipStyle" : "DefaultTooltipStyle",
+                              "Top" : 10,
+                              "Type" : "ptcsbutton",
+                              "UseTheme" : true,
+                              "Visible" : true,
+                              "Width" : 50,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Button",
+                              "__supportsTooltip" : true
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "ButtonType" : "primary",
+                              "ContextID" : "",
+                              "Disabled" : false,
+                              "DisplayName" : "button-102",
+                              "Height" : 30,
+                              "Id" : "button-102",
+                              "Label" : "",
+                              "LabelAlignment" : "center",
+                              "LastContainer" : false,
+                              "Left" : 390,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "TabSequence" : 0,
+                              "ToolTipField" : "LogOut",
+                              "ToolTipStyle" : "DefaultTooltipStyle",
+                              "Top" : 10,
+                              "Type" : "ptcsbutton",
+                              "UseTheme" : true,
+                              "Visible" : true,
+                              "Width" : 30,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Button",
+                              "__supportsTooltip" : true
+                            },
+                            "Widgets" : [ ]
+                          }, {
+                            "Properties" : {
+                              "Area" : "UI",
+                              "Description" : "",
+                              "DisclosureControl" : "show-more",
+                              "DisplayName" : "label-108",
+                              "Height" : 22,
+                              "HorizontalAlignment" : "right",
+                              "Id" : "label-108",
+                              "LabelText" : "Welcome ",
+                              "LabelType" : "label",
+                              "LastContainer" : false,
+                              "Left" : 0.9896240234375,
+                              "MultiLine" : false,
+                              "ResponsiveLayout" : false,
+                              "ShowDataLoading" : true,
+                              "Top" : 3.9930572509765625,
+                              "Type" : "ptcslabel",
+                              "UseTheme" : true,
+                              "VerticalAlignment" : "flex-start",
+                              "Visible" : false,
+                              "Width" : 123,
+                              "Z-index" : 10,
+                              "__TypeDisplayName" : "Label",
+                              "overflowShowLessTxt" : "[[showLess]]",
+                              "overflowShowMoreTxt" : "[[showMore]]"
+                            },
+                            "Widgets" : [ ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  }, {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "container-3",
+                      "EnableExpandCollapse" : false,
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-3",
+                      "LastContainer" : false,
+                      "ResponsiveLayout" : false,
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : true,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Flex Container",
+                      "align-content" : "flex-start",
+                      "align-items" : "flex-start",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "column",
+                      "flex-grow" : 1,
+                      "flex-max-height" : "",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "",
+                      "flex-min-width" : "",
+                      "flex-shrink" : "0",
+                      "flex-size" : "default",
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer",
+                      "isLocked" : true,
+                      "justify-content" : "flex-start",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "Content Layout",
+                        "EnableExpandCollapse" : false,
+                        "Expanded" : true,
+                        "Id" : "flexcontainer-4",
+                        "LastContainer" : true,
+                        "ResponsiveLayout" : true,
+                        "ShowDataLoading" : true,
+                        "ShowExpandCollapseTab" : false,
+                        "SourceURL" : "",
+                        "Style" : "DefaultContainerStyle",
+                        "StyleProperties" : { },
+                        "Type" : "flexcontainer",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Flex Container",
+                        "align-content" : "flex-start",
+                        "align-items" : "flex-start",
+                        "flex-basis" : "auto",
+                        "flex-direction" : "row",
+                        "flex-grow" : 1,
+                        "flex-max-height" : "",
+                        "flex-max-width" : "",
+                        "flex-min-height" : "",
+                        "flex-min-width" : "",
+                        "flex-shrink" : "0",
+                        "flex-size" : "default",
+                        "flex-wrap" : "nowrap",
+                        "iconClass" : "widgets-flexcontainer",
+                        "isLocked" : true,
+                        "justify-content" : "flex-start",
+                        "positioning" : "responsive",
+                        "userCannotRemove" : false
+                      },
+                      "Widgets" : [ {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisplayName" : "container-5",
+                          "EnableExpandCollapse" : false,
+                          "Expanded" : true,
+                          "Id" : "flexcontainer-5",
+                          "LastContainer" : true,
+                          "ResponsiveLayout" : true,
+                          "ShowDataLoading" : true,
+                          "ShowExpandCollapseTab" : false,
+                          "SourceURL" : "",
+                          "Style" : "DefaultContainerStyle",
+                          "StyleProperties" : { },
+                          "Type" : "flexcontainer",
+                          "UseTheme" : true,
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Flex Container",
+                          "align-content" : "flex-start",
+                          "align-items" : "flex-start",
+                          "flex-basis" : "auto",
+                          "flex-direction" : "row",
+                          "flex-grow" : 1,
+                          "flex-max-height" : "",
+                          "flex-max-width" : "",
+                          "flex-min-height" : "",
+                          "flex-min-width" : "",
+                          "flex-shrink" : "0",
+                          "flex-size" : "default",
+                          "flex-wrap" : "nowrap",
+                          "iconClass" : "widgets-flexcontainer",
+                          "isLocked" : true,
+                          "justify-content" : "flex-start",
+                          "positioning" : "responsive",
+                          "userCannotRemove" : false
+                        },
+                        "Widgets" : [ {
+                          "Properties" : {
+                            "Area" : "UI",
+                            "DisplayName" : "Page Mashup",
+                            "Height" : 300,
+                            "Id" : "pagemashupcontainer-6",
+                            "LastContainer" : false,
+                            "Left" : 0,
+                            "Name" : "",
+                            "ResponsiveLayout" : true,
+                            "ShowDataLoading" : true,
+                            "Top" : 0,
+                            "Type" : "pagemashupcontainer",
+                            "Visible" : true,
+                            "Width" : 400,
+                            "Z-index" : 10,
+                            "__TypeDisplayName" : "Page Mashup Container"
+                          },
+                          "Widgets" : [ ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                }, {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "ClickOutsideToClose" : false,
+                    "CloseButton" : true,
+                    "Description" : "IMEX Logout",
+                    "DisplayName" : "NavLogout",
+                    "Id" : "navigationfunction-110",
+                    "LastContainer" : false,
+                    "Left" : 0,
+                    "MissingMashupMessage" : "Not Found",
+                    "PopupHeight" : "0",
+                    "PopupScrollbar" : "auto",
+                    "PopupTitle" : "Logout",
+                    "PopupWidth" : "0",
+                    "ReloadOnReplace" : false,
+                    "ShowDataLoading" : true,
+                    "TargetMashup" : "iMex_MU_Logout",
+                    "TargetWindow" : "new",
+                    "TargetWindowType" : "popup",
+                    "Text" : "tw.navigationfunction-ide.properties.text.default-value",
+                    "Top" : 0,
+                    "Type" : "navigationfunction",
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "navigationfunction",
+                    "_currentParameterDefs" : [ ]
+                  },
+                  "Widgets" : [ ]
+                }, {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "ClickOutsideToClose" : false,
+                    "CloseButton" : true,
+                    "Description" : "Navigate Home",
+                    "DisplayName" : "NavHome",
+                    "Id" : "navigationfunction-111",
+                    "LastContainer" : false,
+                    "Left" : 0,
+                    "MissingMashupMessage" : null,
+                    "PopupHeight" : "0",
+                    "PopupScrollbar" : "auto",
+                    "PopupTitle" : null,
+                    "PopupWidth" : "0",
+                    "ReloadOnReplace" : false,
+                    "ShowDataLoading" : true,
+                    "TargetMashup" : "IOT_AI_MU_Dashboard",
+                    "TargetWindow" : "new",
+                    "TargetWindowType" : "replace",
+                    "Text" : "tw.navigationfunction-ide.properties.text.default-value",
+                    "Top" : 0,
+                    "Type" : "navigationfunction",
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "navigationfunction",
+                    "_currentParameterDefs" : [ ]
+                  },
+                  "Widgets" : [ ]
+                }, {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "ClickOutsideToClose" : false,
+                    "CloseButton" : true,
+                    "Description" : "Navigate to home Mashup",
+                    "DisplayName" : "NavHomeMashup",
+                    "Id" : "navigationfunction-112",
+                    "LastContainer" : false,
+                    "Left" : 0,
+                    "MissingMashupMessage" : null,
+                    "PopupHeight" : "0",
+                    "PopupScrollbar" : "auto",
+                    "PopupTitle" : null,
+                    "PopupWidth" : "0",
+                    "ReloadOnReplace" : false,
+                    "ShowDataLoading" : true,
+                    "TargetMashup" : "IOT_PR_MU_HomeMashup",
+                    "TargetWindow" : "new",
+                    "TargetWindowType" : "replace",
+                    "Text" : "tw.navigationfunction-ide.properties.text.default-value",
+                    "Top" : 0,
+                    "Type" : "navigationfunction",
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "navigationfunction",
+                    "_currentParameterDefs" : [ ]
+                  },
+                  "Widgets" : [ ]
+                }, {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "ClickOutsideToClose" : false,
+                    "CloseButton" : true,
+                    "Description" : "User Validation",
+                    "DisplayName" : "NavValidateUser",
+                    "Id" : "navigationfunction-113",
+                    "LastContainer" : false,
+                    "Left" : 0,
+                    "MissingMashupMessage" : null,
+                    "PopupHeight" : "0",
+                    "PopupScrollbar" : "auto",
+                    "PopupTitle" : "Validate User",
+                    "PopupWidth" : "0",
+                    "ReloadOnReplace" : false,
+                    "ShowDataLoading" : true,
+                    "TargetMashup" : "IOT_UM_MU_ValidateUser",
+                    "TargetWindow" : "new",
+                    "TargetWindowType" : "modal-popup",
+                    "Text" : "tw.navigationfunction-ide.properties.text.default-value",
+                    "Top" : 0,
+                    "Type" : "navigationfunction",
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "navigationfunction",
+                    "_currentParameterDefs" : [ ]
+                  },
+                  "Widgets" : [ ]
+                } ]
+              },
+              "mashupType" : "targetmashup"
+            }
+            ]]>
+            </mashupContent>
+            <preview></preview>
+        </Mashup>
+    </Mashups>
+</Entities>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <Authenticators>
+        <Authenticator
+         aspect.isSystemObject="true"
+         className="com.thingworx.security.authentication.ThingworxBasicAuthenticator"
+         description="Authenticates the username and password provided"
+         documentationContent=""
+         enabled="true"
+         homeMashup=""
+         lastModifiedDate="2020-09-02T23:57:41.021+08:00"
+         name="ThingworxBasicAuthenticator"
+         priority="100"
+         projectName=""
+         tags="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+        </Authenticator>
+    </Authenticators>
+</Entities>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <ThingShapes>
+        <ThingShape
+         aspect.isSystemObject="false"
+         className=""
+         description="Test Equipment Template"
+         documentationContent=""
+         homeMashup=""
+         lastModifiedDate="2020-09-03T16:22:50.282+08:00"
+         name="testThingShape"
+         projectName=""
+         tags="PTC.FTH.afElementTemplate:Test Equipment Template">
+            <PropertyDefinitions>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="NUMBER"
+                 category="Process Data;"
+                 description="Air Filter Temperature"
+                 isLocalOnly="false"
+                 name="Air_Filter_Temperature"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="STRING"
+                 category="Alarms State;"
+                 description="Alarms"
+                 isLocalOnly="false"
+                 name="Alarms"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 baseType="STRING"
+                 category="Run Identification;"
+                 description="Batch"
+                 isLocalOnly="false"
+                 name="Batch"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="NUMBER"
+                 category="Process Data;"
+                 description="Chamber Drain Temperature"
+                 isLocalOnly="false"
+                 name="Chamber_Drain_Temperature"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="NUMBER"
+                 category="Process Data;"
+                 description="Chamber Pressure"
+                 isLocalOnly="false"
+                 name="Chamber_Pressure"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="INTEGER"
+                 category="Process Data;"
+                 description="Chamber Steam Control Valve"
+                 isLocalOnly="false"
+                 name="Chamber_Steam_Control_Valve"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="DATETIME"
+                 category="Run Identification;"
+                 description="Date Attribute 1"
+                 isLocalOnly="false"
+                 name="Date_Attribute_1"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="NUMBER"
+                 category="Process Data;"
+                 description="Jacket Temperature"
+                 isLocalOnly="false"
+                 name="Jacket_Temperature"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="NUMBER"
+                 category="Process Data;"
+                 description="Pressure Setpoint"
+                 isLocalOnly="false"
+                 name="Pressure_Setpoint"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="STRING"
+                 category="Process Data;"
+                 description="Process Data"
+                 isLocalOnly="false"
+                 name="Process_Data"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="STRING"
+                 category="Run Identification;"
+                 description="Run Identification"
+                 isLocalOnly="false"
+                 name="Run_Identification"
+                 ordinal="0"></PropertyDefinition>
+                <PropertyDefinition
+                 aspect.isRemote="true"
+                 baseType="NUMBER"
+                 category="Process Data;"
+                 description="Temperature Setpoint"
+                 isLocalOnly="false"
+                 name="Temperature_Setpoint"
+                 ordinal="0"></PropertyDefinition>
+            </PropertyDefinitions>
+            <ServiceDefinitions></ServiceDefinitions>
+            <EventDefinitions></EventDefinitions>
+            <ServiceMappings></ServiceMappings>
+            <ServiceImplementations></ServiceImplementations>
+            <Subscriptions></Subscriptions>
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <PropertyBindings></PropertyBindings>
+            <RemotePropertyBindings>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Air_Filter_Temperature"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Alarms"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Batch"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Chamber_Drain_Temperature"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Chamber_Pressure"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Chamber_Steam_Control_Valve"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Date_Attribute_1"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Jacket_Temperature"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Pressure_Setpoint"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Process_Data"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Run_Identification"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+                <RemotePropertyBinding
+                 foldType="NONE"
+                 name="Temperature_Setpoint"
+                 pushThreshold="0.0"
+                 pushType="VALUE"
+                 sourceName=""
+                 timeout="0"></RemotePropertyBinding>
+            </RemotePropertyBindings>
+            <RemoteServiceBindings></RemoteServiceBindings>
+            <RemoteEventBindings></RemoteEventBindings>
+            <AlertConfigurations></AlertConfigurations>
+            <InstanceRunTimePermissions></InstanceRunTimePermissions>
+        </ThingShape>
+    </ThingShapes>
+</Entities>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <ExtensionPackages>
+        <ExtensionPackage
+         artifactId=""
+         aspect.isExtension="true"
+         buildNumber=""
+         dependsOn=""
+         description="This extension provides various GIT capabilities that allow storing ThingWorx applications in a third party Git server"
+         documentationContent=""
+         groupId=""
+         homeMashup=""
+         lastModifiedDate="2021-01-12T21:53:29.631+08:00"
+         migratorClass=""
+         minimumThingWorxVersion="8.1.0"
+         name="GitBackupExtension"
+         packageVersion="2.0.2"
+         projectName=""
+         tags=""
+         vendor="ThingWorx Labs">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+        </ExtensionPackage>
+    </ExtensionPackages>
+</Entities>
