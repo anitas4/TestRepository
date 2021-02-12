@@ -531,7 +531,7 @@
         </RunTimePermissions>
         <Entities>
             <Entity
-             name="TestDataShape1"
+             name="TestResultData"
              type="DataShape">
                 <VisibilityPermissions>
                     <Visibility></Visibility>
@@ -618,7 +618,24 @@
                 </EventSubscribe>
             </Permissions>
         </RunTimePermissions>
-        <Entities></Entities>
+        <Entities>
+            <Entity
+             name="TestingTS"
+             type="ThingShape">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+                <RunTimeInstancePermissions></RunTimeInstancePermissions>
+            </Entity>
+        </Entities>
     </ThingShapes>
     <ThingPackages>
         <VisibilityPermissions>
@@ -1104,7 +1121,67 @@
         </RunTimePermissions>
         <Entities>
             <Entity
-             name="Style_TagCICD"
+             name="styleCheckbox"
+             type="StyleDefinition">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="IOT_Style"
+             type="StyleDefinition">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="TestCICDStyle"
+             type="StyleDefinition">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="DemoStyleCICD"
+             type="StyleDefinition">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="CICDCSSStyle"
              type="StyleDefinition">
                 <VisibilityPermissions>
                     <Visibility></Visibility>
@@ -1308,7 +1385,52 @@
         </RunTimePermissions>
         <Entities>
             <Entity
+             name="Mashup1"
+             type="Mashup">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="TestCICDMashup"
+             type="Mashup">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
              name="MAshup_TagCICD"
+             type="Mashup">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="CICDTestMashup"
              type="Mashup">
                 <VisibilityPermissions>
                     <Visibility></Visibility>
@@ -1476,7 +1598,23 @@
                 </EventSubscribe>
             </Permissions>
         </RunTimePermissions>
-        <Entities></Entities>
+        <Entities>
+            <Entity
+             name="TestCICDMedia"
+             type="MediaEntity">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+        </Entities>
     </MediaEntities>
     <Projects>
         <VisibilityPermissions>
@@ -1549,7 +1687,23 @@
                 </EventSubscribe>
             </Permissions>
         </RunTimePermissions>
-        <Entities></Entities>
+        <Entities>
+            <Entity
+             name="TestCICDProject"
+             type="Project">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+        </Entities>
     </Projects>
     <Networks>
         <VisibilityPermissions>
@@ -2162,7 +2316,38 @@
                 </EventSubscribe>
             </Permissions>
         </RunTimePermissions>
-        <Entities></Entities>
+        <Entities>
+            <Entity
+             name="TestResultsDT"
+             type="Thing">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+            <Entity
+             name="TestDemoThing"
+             type="Thing">
+                <VisibilityPermissions>
+                    <Visibility></Visibility>
+                </VisibilityPermissions>
+                <DesignTimePermissions>
+                    <Create></Create>
+                    <Read></Read>
+                    <Update></Update>
+                    <Delete></Delete>
+                    <Metadata></Metadata>
+                </DesignTimePermissions>
+                <RunTimePermissions></RunTimePermissions>
+            </Entity>
+        </Entities>
     </Things>
     <NotificationContents>
         <VisibilityPermissions>

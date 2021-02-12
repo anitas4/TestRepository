@@ -7,16 +7,15 @@
  revision="2"
  schemaVersion="1052"
  universal="password">
-    <DataShapes>
-        <DataShape
-         baseDataShape=""
+    <StyleDefinitions>
+        <StyleDefinition
          description=""
          documentationContent=""
          homeMashup=""
-         lastModifiedDate="2021-02-12T15:04:11.396+08:00"
-         name="TestDataShape1"
-         projectName=""
-         tags="TagCICD:IOT">
+         lastModifiedDate="2021-02-12T15:04:48.570+08:00"
+         name="styleCheckbox"
+         projectName="TestCICDProject"
+         tags="">
             <avatar></avatar>
             <DesignTimePermissions>
                 <Create></Create>
@@ -31,7 +30,24 @@
             </VisibilityPermissions>
             <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
             <ConfigurationTables></ConfigurationTables>
-            <FieldDefinitions></FieldDefinitions>
-        </DataShape>
-    </DataShapes>
+            <content>
+            <![CDATA[
+            {
+              "backgroundColor" : "",
+              "displayString" : "",
+              "fontEmphasisBold" : false,
+              "fontEmphasisItalic" : false,
+              "fontEmphasisUnderline" : false,
+              "foregroundColor" : "",
+              "image" : "",
+              "lineColor" : "",
+              "lineStyle" : "solid",
+              "lineThickness" : 1,
+              "secondaryBackgroundColor" : "",
+              "textSize" : "normal"
+            }
+            ]]>
+            </content>
+        </StyleDefinition>
+    </StyleDefinitions>
 </Entities>

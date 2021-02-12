@@ -12,10 +12,10 @@
          description=""
          documentationContent=""
          homeMashup=""
-         lastModifiedDate="2021-02-12T01:07:27.547+08:00"
-         name="Style_TagCICD"
-         projectName=""
-         tags="TagCICD:IOT">
+         lastModifiedDate="2021-02-12T15:04:48.591+08:00"
+         name="TestCICDStyle"
+         projectName="TestCICDProject"
+         tags="">
             <avatar></avatar>
             <DesignTimePermissions>
                 <Create></Create>
@@ -33,7 +33,7 @@
             <content>
             <![CDATA[
             {
-              "backgroundColor" : "",
+              "backgroundColor" : "rgba(203,93,142,1)",
               "displayString" : "",
               "fontEmphasisBold" : false,
               "fontEmphasisItalic" : false,
