@@ -11,7 +11,7 @@
   "lineThickness" : 1,
   "secondaryBackgroundColor" : "",
   "textSize" : "normal"
-}]]></content><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, tags : updated&#10;" timestamp="2021-02-12T01:07:27.547+08:00" user="Administrator"/></ConfigurationChanges></StyleDefinition></StyleDefinitions><Networks/><PersistenceProviderPackages/><Mashups><Mashup aspect.isFlex="true" aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="" homeMashup="" lastModifiedDate="2021-02-12T01:00:47.708+08:00" name="MAshup_TagCICD" projectName="TestCICDProject" rows="0.0" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ParameterDefinitions/><Things/><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
+}]]></content><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, tags : updated&#10;" timestamp="2021-02-12T01:07:27.547+08:00" user="Administrator"/></ConfigurationChanges></StyleDefinition></StyleDefinitions><Networks/><PersistenceProviderPackages/><Mashups><Mashup aspect.isFlex="true" aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="" homeMashup="" lastModifiedDate="2021-02-12T15:04:48.569+08:00" name="MAshup_TagCICD" projectName="TestCICDProject" rows="0.0" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ParameterDefinitions/><Things/><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
   "CustomMashupCss" : "",
   "Data" : {
     "Session" : {
@@ -46,16 +46,27 @@
     }
   },
   "DataBindings" : [ ],
-  "DesignTimePermissions" : { },
+  "DesignTimePermissions" : {
+    "Create" : [ ],
+    "Delete" : [ ],
+    "Metadata" : [ ],
+    "Read" : [ ],
+    "Update" : [ ]
+  },
   "Events" : [ ],
-  "RunTimePermissions" : { },
+  "RunTimePermissions" : {
+    "permissions" : [ ]
+  },
   "UI" : {
     "Properties" : {
+      "AddToDashboardButton" : "SimplePlus",
       "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
       "Area" : "Mashup",
+      "BGImage" : "",
       "BGImageRepeat" : "no-repeat",
       "BGImageSize" : "auto",
       "Columns" : 0,
+      "ConfigureGadgetButton" : "SimpleGear",
       "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
       "DisplayName" : "Mashup",
       "EnableParameterEditing" : false,
@@ -78,15 +89,54 @@
       "TitleBarText" : "Gadget Title Here",
       "Top" : 0,
       "Type" : "mashup",
+      "UseMasterTheme" : false,
+      "UseTheme" : false,
       "UseThemeForHybrids" : false,
       "Visible" : true,
       "Width" : 1024,
       "Z-index" : 10,
       "__TypeDisplayName" : "Mashup",
-      "id_index" : 1,
+      "id_index" : 2,
       "supportsAutoResize" : true
     },
-    "Widgets" : [ ]
+    "Widgets" : [ {
+      "Properties" : {
+        "Area" : "UI",
+        "DisplayName" : "container-2",
+        "EnableExpandCollapse" : false,
+        "Expanded" : true,
+        "Id" : "flexcontainer-2",
+        "LastContainer" : true,
+        "ResponsiveLayout" : true,
+        "ShowDataLoading" : true,
+        "ShowExpandCollapseTab" : false,
+        "SourceURL" : "",
+        "Style" : "DefaultContainerStyle",
+        "StyleProperties" : { },
+        "Type" : "flexcontainer",
+        "UseTheme" : true,
+        "Visible" : true,
+        "Z-index" : 10,
+        "__TypeDisplayName" : "Responsive Container",
+        "align-content" : "flex-start",
+        "align-items" : "flex-start",
+        "flex-basis" : "auto",
+        "flex-direction" : "row",
+        "flex-grow" : 1,
+        "flex-max-height" : "",
+        "flex-max-width" : "",
+        "flex-min-height" : "",
+        "flex-min-width" : "",
+        "flex-shrink" : 1,
+        "flex-size" : "default",
+        "flex-wrap" : "nowrap",
+        "iconClass" : "widgets-flexcontainer",
+        "justify-content" : "flex-start",
+        "positioning" : "responsive",
+        "userCannotRemove" : true
+      },
+      "Widgets" : [ ]
+    } ]
   },
   "mashupType" : "mashup"
-}]]></mashupContent><preview/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, tags : updated, projectName : updated&#10;" timestamp="2021-02-12T01:00:47.698+08:00" user="Administrator"/></ConfigurationChanges></Mashup></Mashups><ScriptFunctionLibraries/><Projects/><Users/><DirectoryServices/><Widgets/><MediaEntities/><Groups/><PersistenceProviders/><ModelTags><ModelTagVocabulary description="" documentationContent="" homeMashup="" isDynamic="false" lastModifiedDate="2021-02-12T01:01:09.090+08:00" name="TagCICD" projectName="TestCICDProject" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><VocabularyTerm description="" name="IOT"/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;terms : IOT : added&#10;" timestamp="2021-02-12T00:59:24.460+08:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2021-02-12T01:01:09.090+08:00" user="Administrator"/></ConfigurationChanges></ModelTagVocabulary></ModelTags><LocalizationTables/><Dashboards/><StyleThemes/><DataShapes/><Things/><Logs/><Authenticators/><ThingPackages/><NotificationDefinitions/><ApplicationKeys/><StateDefinitions/><ThingTemplates/><ExtensionPackages/><Organizations/><Menus/><Resources/><DataTags/><ThingShapes/><Subsystems/><NotificationContents/></Entities>
+}]]></mashupContent><preview/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, tags : updated, projectName : updated&#10;" timestamp="2021-02-12T01:00:47.698+08:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2021-02-12T15:03:29.938+08:00" user="Administrator"/></ConfigurationChanges></Mashup></Mashups><ScriptFunctionLibraries/><Projects/><Users/><DirectoryServices/><Widgets/><MediaEntities/><Groups/><PersistenceProviders/><ModelTags><ModelTagVocabulary description="" documentationContent="" homeMashup="" isDynamic="false" lastModifiedDate="2021-02-12T15:04:48.572+08:00" name="TagCICD" projectName="TestCICDProject" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><VocabularyTerm description="" name="IOT"/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;terms : IOT : added&#10;" timestamp="2021-02-12T00:59:24.460+08:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2021-02-12T01:01:09.090+08:00" user="Administrator"/></ConfigurationChanges></ModelTagVocabulary></ModelTags><LocalizationTables/><Dashboards/><StyleThemes/><DataShapes><DataShape baseDataShape="" description="" documentationContent="" homeMashup="" lastModifiedDate="2021-02-12T15:04:11.396+08:00" name="TestDataShape1" projectName="" tags="TagCICD:IOT"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><FieldDefinitions/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, tags : updated&#10;" timestamp="2021-02-12T15:04:02.191+08:00" user="Administrator"/></ConfigurationChanges></DataShape></DataShapes><Things/><Logs/><Authenticators/><ThingPackages/><NotificationDefinitions/><ApplicationKeys/><StateDefinitions/><ThingTemplates/><ExtensionPackages/><Organizations/><Menus/><Resources/><DataTags/><ThingShapes/><Subsystems/><NotificationContents/></Entities>
