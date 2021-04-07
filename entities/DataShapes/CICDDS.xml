@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b90"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="2"
+ schemaVersion="1052"
+ universal="password">
+    <DataShapes>
+        <DataShape
+         baseDataShape=""
+         description=""
+         documentationContent=""
+         homeMashup=""
+         lastModifiedDate="2021-04-07T19:42:46.881+08:00"
+         name="CICDDS"
+         projectName=""
+         tags="TagCICD:IOT">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <FieldDefinitions></FieldDefinitions>
+        </DataShape>
+    </DataShapes>
+</Entities>
